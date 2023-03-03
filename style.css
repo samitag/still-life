@@ -1,0 +1,283 @@
+body {
+	background-color: black;
+	color: white;
+	font-weight: bold;
+	font-family: 'Courier New', Courier, monospace;
+	text-align: right;
+}
+
+#wrapper {
+  position: relative;
+  width: 800px;
+  height: 600px;
+  background-color: #b33c05;
+  overflow: hidden;
+	bottom: 0;
+	left: 0;
+}
+
+#blackbag {
+	position: absolute;
+	margin-left: 10%;
+  width: 790px;
+  height: 800px;
+  background-color: #292721;
+	background-image: radial-gradient(#f2eedc 30%, transparent 30.1%);
+	background-size: 20px 14px;
+	rotate: -10deg;
+  transform-origin: bottom left;
+}
+
+#greenbox {
+	position: absolute;
+	margin-left: 25%;
+	margin-top: 18%;
+  width: 600px;
+  height: 600px;
+  background: #055233;
+	rotate: -14deg;
+  transform-origin: bottom left;
+}
+
+#greenboxshadow {
+	position: absolute;
+	margin-left: 25%;
+	margin-top: 18%;
+  width: 610px;
+  height: 600px;
+	background: radial-gradient(#363633 40%, transparent);
+	rotate: -14deg;
+  transform-origin: bottom left;
+}
+
+#title {
+	width: 500px;
+	height: 90px;
+	background: repeating-linear-gradient(to right, white, white 4%, #055233 4%, #055233 12%, white 12%, white 16%, #055233 16%, #055233 23%, white 23%, white 24%, #055233 24%, #055233 25%, white 25%, white 27%, #055233 27%, #055233 30%);
+	margin-left: 10%;
+	margin-top: 15%;
+}
+
+#title2 {
+	width: 370px;
+	height: 90px;
+	background: repeating-linear-gradient(to right, white, white 4%, #055233 4%, #055233 12%, white 12%, white 16%, #055233 16%, #055233 23%, white 23%, white 24%, #055233 24%, #055233 25%, white 25%, white 27%, #055233 27%, #055233 30%);
+	margin-left: 10%;
+	margin-top: 7%;
+}
+
+
+#redtriangle {
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 80px 300px 80px;
+	border-color: transparent transparent #b33c05 transparent;
+	transform: rotate(30deg);
+	margin-top: 110%;
+	margin-left: 30%;
+}
+
+#redtriangleshadow {
+	position: absolute;
+	width: 12px;
+	height: 270px;
+	margin-top: 115%;
+	margin-left: 60%;
+	transform: rotate(15deg);
+	background: radial-gradient(#363633 30%, transparent);
+}
+
+
+#whitebox {
+	position: absolute;
+	width: 400px;
+  height: 360px;
+	margin-left: 35%;
+	margin-top: 30%;
+	background: #faf9d2;
+  transform-origin: bottom left;
+	transform: rotate(20deg); 
+}
+
+#whiteboxshadow {
+	position: absolute;
+	width: 400px;
+  height: 360px;
+	margin-left: 38%;
+	margin-top: 29%;
+	background: radial-gradient(#363633 40%, transparent);
+  transform-origin: bottom left;
+	transform: rotate(20deg); 
+}
+
+#titlecontainer {
+	overflow: hidden;
+	position: absolute;
+	width: 270px;
+	height: 30px;
+	margin-left: 16%;
+	margin-top: 8%;
+}
+
+#titlecontainer2 {
+	overflow: hidden;
+	position: absolute;
+	width: 200px;
+	height: 60px;
+	margin-left: 25%;
+	margin-top: 20%;
+}
+
+#redtitle {
+	position: absolute;
+	width: 600px;
+	height: 30px;
+	background: repeating-linear-gradient(to right, #faf9d2, #faf9d2 1%, #b33c05 1%, 		#b33c05 4%, #faf9d2 4%, #faf9d2 7%, #b33c05 7%, #b33c05 12%, #faf9d2 12%, #faf9d2 13%, #b33c05 13%, #b33c05 14%, #faf9d2 14%, #faf9d2 16%, #b33c05 16%, #b33c05 22%);
+	margin-left: -100%;
+}
+
+#blacktitle {
+	position: absolute;
+	width: 300px;
+	height: 60px;
+	background: repeating-linear-gradient(to right, #faf9d2, #faf9d2 4%, #292721 4%, 		#292721 12%, #faf9d2 12%, #faf9d2 16%, #292721 16%, #292721 20%, #faf9d2 20%, #faf9d2 24%, #292721 24%, #292721 26%);
+}
+
+.move, .reversemove {
+	transition: 0.75s;
+}
+
+.move:hover {
+	transform: translate(100px, 0px);
+} 
+
+.reversemove:hover {
+	transform: translate(-100px, 0px);
+} 
+
+#dot1 {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%; 
+	background-color: #7f7df5;
+	margin-left: 70px;
+	margin-top: 40%;
+}
+
+#dot2 {	 
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%; 
+	background: #7f7df5;
+	margin-left: 70px;
+	margin-top: 70%;
+}
+
+#dot3 {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%; 
+	background-color: #fadc34;
+	margin-left: 240px;
+	margin-top: 40%;
+}
+
+#dot1:hover, #dot2:hover {
+  background-color: #fadc34;
+}
+
+#dot3:hover {
+  background-color: #7f7df5;
+}
+
+#yellowbox {
+	position: absolute;
+	width: 200px;
+  height: 200px;
+	background: #fadc34;
+	rotate: 30deg;
+  transform-origin: bottom left;
+	margin-left: 56%;
+	margin-top: -25%;
+}
+
+#yellowboxshadow {
+	position: absolute;
+	width: 210px;
+  height: 210px;
+	background: radial-gradient(#363633 40%, transparent);
+	rotate: 30deg;
+  transform-origin: bottom left;
+	margin-left: 55%;
+	margin-top: -25%;
+}
+
+#diskshadow {
+	position: absolute;
+  width: 390px;
+  height: 390px;
+	background: radial-gradient(#363633, transparent);
+  border-radius: 50%;
+}  
+
+#disk {
+	overflow: hidden;
+	position: absolute;
+  width: 400px;
+  height: 400px;
+  background: #a6a89b;
+  border-radius: 50%;
+	margin-left: -5%;
+	margin-top: -5%;
+}
+
+#diskcolors {
+	position: absolute;
+	width: 400px;
+  height: 400px;
+	background-image: repeating-conic-gradient(#a6a89b 45%, #ff96d5 65%, #fadc34 69%, white 69.5%, #96fff3 70%, #a6a89b 105%, #fadc34 106%, #ff96d5 110% );
+	margin: auto;
+}
+
+.rotate {
+	transition: 1s ease-in-out;
+}
+
+.rotate:hover {
+	transform: rotate(360deg);
+}
+
+#diskhole {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background: radial-gradient(farthest-corner at 80px 80px, #055233 65%, #242422);
+	margin-left: 150px;
+	margin-top: 150px;
+}
+
+#diskholeoutline {
+	position: absolute;
+	width: 130px;
+	height: 130px;
+	border-radius: 50%;
+	background-color: black;
+	margin-left: 34%;
+	margin-top: 34%;
+}
+
+#diskreflect {
+	position: absolute;
+	width: 105px;
+	height: 105px;
+	border-radius: 50%;
+	background: repeating-conic-gradient(black, black 5%, white 6%, white 11%, black 13%, black 27%, white 30%);
+	margin-left: 36.8%;
+	margin-top: 37%;
+}
